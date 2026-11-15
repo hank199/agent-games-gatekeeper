@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [{ "source": "/agent", "destination": "/api/agent" }],
+  "functions": {
+    "api/agent.js": {
+      "memory": 1024,
+      "maxDuration": 60,
+      "includeFiles": "circuits/**"
+    }
+  }
+}

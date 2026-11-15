@@ -1,0 +1,24 @@
+{
+  "name": "gatekeeper-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node scripts/dev-server.mjs",
+    "replay": "node scripts/replay.mjs",
+    "test:rules": "node test/rule-matrix.mjs",
+    "smoke": "node test/prove-smoke.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "snarkjs": "^0.7.6"
+  }
+}
